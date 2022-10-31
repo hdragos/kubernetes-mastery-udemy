@@ -21,7 +21,8 @@ A really basic diagram about it can be found below:
 
 #### Control plane
 
-One or more master nodes.
+An abstraction over one or more master nodes. However, the control plane can be on the same node as 
+some worker nodes (see `minikube`).
 
 #### Docker 
 
@@ -29,7 +30,11 @@ The most popular container runtime for Kubernetes.
 
 #### etcd
 
-A key-value store used internally by Kubernetes, present on master nodes. 
+A key-value store used internally by Kubernetes, present on master nodes. It stores critical data about the cluster.
+
+#### Kubelet
+
+The piece of software that interacts with the control plane and executes the given instructions.
 
 #### Master node
 
